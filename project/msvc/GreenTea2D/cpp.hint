@@ -1,0 +1,4 @@
+// ヒント ファイルは、Visual Studio IDE が Visual C++ 識別子を解釈するのに役立ちます
+// 関数およびマクロの名前などです。
+// 詳細については次を参照してください https://go.microsoft.com/fwlink/?linkid=865984
+#define PY_CONFIG_METHOD_GET_SET(__TYPE, __name) inline __TYPE Get##__name(){ return gGt2Config.Get##__name(); } inline void Set##__name(const __TYPE val) { gGt2Config.Set##__name(val); }

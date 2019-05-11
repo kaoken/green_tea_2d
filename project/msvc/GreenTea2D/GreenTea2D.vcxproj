@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{078B89EF-1BE2-417A-A6B4-F2843AD6EB1A}</ProjectGuid>
+    <RootNamespace>GreenTea2D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../../output/windows/bin/</OutDir>
+    <IntDir>../../../output/windows/obj/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../../output/windows/bin/</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <IntDir>../../../output/windows/obj/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../3rdParty/include/python37;../../../3rdParty/include;../../../source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>../../../3rdParty/lib/windows/lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>../../../output/windows/bin/$(TargetName)$(TargetExt)</OutputFile>
+      <ManifestFile>../../../output/windows/bin/$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../3rdParty/include/python37;../../../3rdParty/include;../../../source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../../../3rdParty/lib/windows/lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>../../../output/windows/bin/$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>../../../output/windows/bin/$(TargetName).pdb</ProgramDatabaseFile>
+      <ProfileGuidedDatabase>../../../output/windows/bin/$(TargetName).pgd</ProfileGuidedDatabase>
+      <ManifestFile>../../../output/windows/bin/$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\Core\GreenTea2D\config.cpp" />
+    <ClCompile Include="..\..\..\source\Core\GreenTea2D\logger.cpp" />
+    <ClCompile Include="..\..\..\source\Core\GreenTea2D\MsgBox.cpp" />
+    <ClCompile Include="..\..\..\source\Core\GreenTea2D\string.cpp" />
+    <ClCompile Include="..\..\..\source\game.cpp" />
+    <ClCompile Include="..\..\..\source\Graphics\Font\fontManager.cpp" />
+    <ClCompile Include="..\..\..\source\main.cpp" />
+    <ClCompile Include="..\..\..\source\GameApp.cpp" />
+    <ClCompile Include="..\..\..\source\Math\Capsule.cpp" />
+    <ClCompile Include="..\..\..\source\Math\Circle.cpp" />
+    <ClCompile Include="..\..\..\source\Math\Cylinder.cpp" />
+    <ClCompile Include="..\..\..\source\Math\lambertW.cpp" />
+    <ClCompile Include="..\..\..\source\Math\Triangle.cpp" />
+    <ClCompile Include="..\..\..\source\Math\UTmath.cpp" />
+    <ClCompile Include="..\..\..\source\Python\pyAppConfig.cpp" />
+    <ClCompile Include="..\..\..\source\Python\Util\pyBind11Util.cpp" />
+    <ClCompile Include="..\..\..\source\Python\Util\PYUtil.cpp" />
+    <ClCompile Include="..\..\..\source\Util\chunkFormat.cpp" />
+    <ClCompile Include="..\..\..\source\Util\filesystem.cpp" />
+    <ClCompile Include="..\..\..\source\Util\md5.cpp" />
+    <ClCompile Include="..\..\..\source\Util\sha.cpp" />
+    <ClCompile Include="..\..\..\source\Util\systemInfo.cpp" />
+    <ClCompile Include="..\..\..\source\Util\timer.cpp" />
+    <ClCompile Include="..\..\..\source\Util\UtilBuffer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\Core\greenTea2D.h" />
+    <ClInclude Include="..\..\..\source\Core\GreenTea2D\MsgBox.h" />
+    <ClInclude Include="..\..\..\source\game.h" />
+    <ClInclude Include="..\..\..\source\GameApp.h" />
+    <ClInclude Include="..\..\..\source\Graphics\Font\fontManager.h" />
+    <ClInclude Include="..\..\..\source\main.h" />
+    <ClInclude Include="..\..\..\source\Math\AABB.h" />
+    <ClInclude Include="..\..\..\source\Math\Capsule.h" />
+    <ClInclude Include="..\..\..\source\Math\Circle.h" />
+    <ClInclude Include="..\..\..\source\Math\Cylinder.h" />
+    <ClInclude Include="..\..\..\source\Math\lambertW.h" />
+    <ClInclude Include="..\..\..\source\Math\mathMacro.h" />
+    <ClInclude Include="..\..\..\source\Math\math_group.h" />
+    <ClInclude Include="..\..\..\source\Math\matrix.h" />
+    <ClInclude Include="..\..\..\source\Math\OBB.h" />
+    <ClInclude Include="..\..\..\source\Math\plane.h" />
+    <ClInclude Include="..\..\..\source\Math\quaternion.h" />
+    <ClInclude Include="..\..\..\source\Math\Ray.h" />
+    <ClInclude Include="..\..\..\source\Math\Segment.h" />
+    <ClInclude Include="..\..\..\source\Math\Sphere.h" />
+    <ClInclude Include="..\..\..\source\Math\Triangle.h" />
+    <ClInclude Include="..\..\..\source\Math\UtilMath.h" />
+    <ClInclude Include="..\..\..\source\Math\vector.h" />
+    <ClInclude Include="..\..\..\source\Python\pyAppConfig.h" />
+    <ClInclude Include="..\..\..\source\Python\Util\pyBind11Util.h" />
+    <ClInclude Include="..\..\..\source\Python\Util\PyLogHook.h" />
+    <ClInclude Include="..\..\..\source\Python\Util\PYUtil.h" />
+    <ClInclude Include="..\..\..\source\Util\array.h" />
+    <ClInclude Include="..\..\..\source\Util\chunkFormat.h" />
+    <ClInclude Include="..\..\..\source\Util\color.h" />
+    <ClInclude Include="..\..\..\source\Util\filesystem.h" />
+    <ClInclude Include="..\..\..\source\Util\guid.h" />
+    <ClInclude Include="..\..\..\source\Util\md5.h" />
+    <ClInclude Include="..\..\..\source\Util\NumberMgr.h" />
+    <ClInclude Include="..\..\..\source\Util\rect.h" />
+    <ClInclude Include="..\..\..\source\Util\sha.h" />
+    <ClInclude Include="..\..\..\source\Util\systemInfo.h" />
+    <ClInclude Include="..\..\..\source\Util\timer.h" />
+    <ClInclude Include="..\..\..\source\Util\UtilBuffer.h" />
+    <ClInclude Include="..\..\..\source\Util\UtilValue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\source\Core\GreenTea2D\config.inl" />
+    <None Include="..\..\..\source\Core\GreenTea2D\Exception.inl" />
+    <None Include="..\..\..\source\Core\GreenTea2D\hresult.inl" />
+    <None Include="..\..\..\source\Core\GreenTea2D\logger.inl" />
+    <None Include="..\..\..\source\Core\GreenTea2D\string.inl" />
+    <None Include="..\..\..\source\Core\GreenTea2D\templates.inl" />
+    <None Include="..\..\..\source\Core\GreenTea2D\type.inl" />
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

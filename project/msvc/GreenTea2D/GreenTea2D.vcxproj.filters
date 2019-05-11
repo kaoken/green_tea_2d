@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Python">
+      <UniqueIdentifier>{f9815814-d6dc-4ed4-af08-24eafed4fab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Actor">
+      <UniqueIdentifier>{d38b68e2-54c8-4eab-94a4-ab5569fa70d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Input">
+      <UniqueIdentifier>{b6f0d8a0-d971-4de3-9e37-02dd867f2e07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Util">
+      <UniqueIdentifier>{7f7e77ed-a9e4-4ac0-9668-574405e1501c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{59727337-7b36-4317-bfc8-1c40ff8fa265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{d89a4ee4-da3b-4d43-936f-8a0b7b478529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{a5a3aacc-d9e2-44df-9483-15e759c3ae2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Font">
+      <UniqueIdentifier>{bc638e41-8408-42aa-a11a-455c836ebbd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\GreenTea2D">
+      <UniqueIdentifier>{d4fb0502-575a-4318-a579-ac08facd0e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{98bf298e-8d30-41f4-9db4-bee03f8072f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\game.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\GameApp.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Python\pyAppConfig.cpp">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Graphics\Font\fontManager.cpp">
+      <Filter>Graphics\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Python\Util\pyBind11Util.cpp">
+      <Filter>Python\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Core\GreenTea2D\config.cpp">
+      <Filter>Core\GreenTea2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Core\GreenTea2D\MsgBox.cpp">
+      <Filter>Core\GreenTea2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Core\GreenTea2D\string.cpp">
+      <Filter>Core\GreenTea2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Util\chunkFormat.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Util\filesystem.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Util\md5.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Util\sha.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Util\systemInfo.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Util\timer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Util\UtilBuffer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Math\Circle.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Math\Cylinder.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Math\lambertW.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Math\Triangle.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Math\UTmath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Math\Capsule.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Core\GreenTea2D\logger.cpp">
+      <Filter>Core\GreenTea2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Python\Util\PYUtil.cpp">
+      <Filter>Python\Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\game.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Core\greenTea2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\GameApp.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Python\pyAppConfig.h">
+      <Filter>Python</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Python\Util\pyBind11Util.h">
+      <Filter>Python\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Graphics\Font\fontManager.h">
+      <Filter>Graphics\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Core\GreenTea2D\MsgBox.h">
+      <Filter>Core\GreenTea2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\array.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\chunkFormat.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\color.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\filesystem.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\guid.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\md5.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\NumberMgr.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\rect.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\sha.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\systemInfo.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\timer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\UtilBuffer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Util\UtilValue.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\Circle.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\Cylinder.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\lambertW.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\math_group.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\mathMacro.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\OBB.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\plane.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\Ray.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\Segment.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\Sphere.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\Triangle.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\UtilMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\vector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\AABB.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Math\Capsule.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Python\Util\PyLogHook.h">
+      <Filter>Python\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Python\Util\PYUtil.h">
+      <Filter>Python\Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\source\Core\GreenTea2D\config.inl">
+      <Filter>Core\GreenTea2D</Filter>
+    </None>
+    <None Include="..\..\..\source\Core\GreenTea2D\Exception.inl">
+      <Filter>Core\GreenTea2D</Filter>
+    </None>
+    <None Include="..\..\..\source\Core\GreenTea2D\hresult.inl">
+      <Filter>Core\GreenTea2D</Filter>
+    </None>
+    <None Include="..\..\..\source\Core\GreenTea2D\logger.inl">
+      <Filter>Core\GreenTea2D</Filter>
+    </None>
+    <None Include="..\..\..\source\Core\GreenTea2D\string.inl">
+      <Filter>Core\GreenTea2D</Filter>
+    </None>
+    <None Include="..\..\..\source\Core\GreenTea2D\templates.inl">
+      <Filter>Core\GreenTea2D</Filter>
+    </None>
+    <None Include="..\..\..\source\Core\GreenTea2D\type.inl">
+      <Filter>Core\GreenTea2D</Filter>
+    </None>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>
